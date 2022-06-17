@@ -4,9 +4,9 @@
 
 本程序复刻了曾经风靡一时的魔性小游戏，实现了移动、跳跃、碰撞判定、计 分等一系列游戏功能
 
-<img src="../assets/34-angrybirds.assets/Screen Shot 2022-06-16 at 00.36.16.png" alt="Screen Shot 2022-06-16 at 00.36.16" style="zoom:40%;" />
+<img src="./assets/34-angrybirds.assets/Screen Shot 2022-06-16 at 00.36.16.png" alt="Screen Shot 2022-06-16 at 00.36.16" style="zoom:40%;" />
 
-<img src="../assets/34-angrybirds.assets/Screen Shot 2022-06-16 at 00.36.39.png" alt="Screen Shot 2022-06-16 at 00.36.39" style="zoom:30%;" />
+<img src="./assets/34-angrybirds.assets/Screen Shot 2022-06-16 at 00.36.39.png" alt="Screen Shot 2022-06-16 at 00.36.39" style="zoom:30%;" />
 
 ## 二、程序的算法和开发部分 
 
@@ -16,7 +16,7 @@
 
 其中，为了小鸟的飞行轨迹看起来是非常顺滑的抛物线，因此需要转动小鸟，Bird 类中控制小鸟旋转的 getDrawer 方法中我们建立了如下的模型: 假设小鸟的速度为 v，则小鸟在水平方向的偏转角 θ(单位为度) 为：
 
-<img src="../assets/34-angrybirds.assets/Screen Shot 2022-06-16 at 00.37.59.png" alt="Screen Shot 2022-06-16 at 00.37.59" style="zoom: 50%;" />
+<img src="./assets/34-angrybirds.assets/Screen Shot 2022-06-16 at 00.37.59.png" alt="Screen Shot 2022-06-16 at 00.37.59" style="zoom: 50%;" />
 
 但是在向下旋转时有可能会出现速度过大而使 θ > 90 的情况，因此在 θ > 90 时应将 θ 固定在 90 度，即 π/2 弧度，因此有了 getDrawer 方法中的算法。
 
